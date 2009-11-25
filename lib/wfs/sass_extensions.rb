@@ -7,7 +7,7 @@ module Sass::Script::Functions
     while args.size > 0
       files << "url('fonts/#{args.shift}') format('fonts/#{args.shift}')"
     end
-    Sass::Script::String.new(files.join(",\n "))
+    Sass::Script::String.new(files.join(", "))
   end
 end
 
