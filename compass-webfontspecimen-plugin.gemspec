@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.date = %q{2009-11-24}
   s.description = %q{An adaptation of Tim Brown's Web Font Specimen for Compass.}
   s.email = %q{eric@oddbird.net}
-  s.extra_rdoc_files = ["lib/wfs/compass_plugin.rb", "lib/wfs.rb", "README.mkdn"]
+  s.extra_rdoc_files = ["lib/wfs/compass_plugin.rb", "lib/webfontspecimen.rb", "README.mkdn"]
   s.files = ["lib/wfs/compass_plugin.rb", "lib/wfs/sass_extensions.rb", "lib/webfontspecimen.rb", "Manifest", "Rakefile", "README.mkdn", "sass/wfs/_font_face.sass", "sass/wfs/_960.sass", "sass/wfs/_base.sass", "templates/project/wfs.sass", "templates/project/wfs.html", "templates/project/manifest.rb", "VERSION", "LICENSE.txt", "compass-webfontspecimen-plugin.gemspec"]
   s.homepage = %q{http://github.com/ericam/compass-webfontspecimen-plugin}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Compass-webfontspecimen-plugin", "--main", "README.mkdn"]
