@@ -1,6 +1,8 @@
 /*
   Welcome to WebFontSpecimen
-
+  Based on Nice Web Type's tool by the same name
+  http://webfontspecimen.com/
+  
 
 // Import the font-family mixin
 @import wfs/font_face.sass
@@ -8,14 +10,19 @@
 
 // Place your font directory directly inside your CSS directory.
 // It is recommended that you name your different font-styles differently
-// rather than using the optional !style argument as IE ignores font-style.
+// rather than using the optional !style argument: IE ignores font-style.
 
+// Your normal font face
 !normal_font_face = "Name Your Font"
 +font-face(!normal_font_face, font_files("type_file.woff", "woff", "type_file.otf", "opentype"), "fonts/type_file.eot", "postscriptname")
 
+// Your italic font face
+//  - delete or comment out these lines if there is no italic version
 !italic_font_face = "Name Your Italic Font"
 +font-face(!italic_font_face, font_files("type_file.woff", "woff", "type_file.otf", "opentype"), "fonts/type_file.eot", "postscriptname")
 
+// Your bold font face
+//  - delete or comment out these lines if there is no bold version
 !bold_font_face = "Name Your Bold Font"
 +font-face("Your bold typeface", font_files("type_file.woff", "woff", "type_file.otf", "opentype"), "fonts/type_file.eot", "postscriptname")
 
