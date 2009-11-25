@@ -1,6 +1,6 @@
 lib/wfs/compass_plugin.rb
 lib/wfs/sass_extensions.rb
-lib/wfs.rb
+lib/webfontspecimen.rb
 Manifest
 Rakefile
 README.mkdn
