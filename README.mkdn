@@ -1,24 +1,46 @@
 Web Font Specimen - Compass Plugin 
-=====================
+==================================
 
 [Web Font Specimen](http://webfontspecimen.com/) is a tool built by Tim Brown
 ([Nice Web Type](http://nicewebtype.com/)) to help web designers make
 type-setting decisions. It was ported to Compass by [Eric
-Meyer](http://www.oddbird.net)
+Meyer](http://www.oddbird.net).
 
 
 Install 
 =======
 
-    sudo gem sources --add http://gemcutter.org/ 
-    sudo gem install compass-webfontspecimen-plugin
+    sudo gem install webfontspecimen
 
+Create A Project Using WFS:
+===========================
 
-Create a Web Font Specimen 
-==========================
+    compass create <project name> -r webfontspecimen -u webfontspecimen
 
-    compass -r webfontspecimen -f webfontspecimen <project name>
+Or Add WFS To An Existing Project:
+==================================
 
-Copy your fint files into a `fonts` directory in your CSS directory. Fill in your normal, italic and bold
-@font-face variables and mixins in `wfs.sass`, make sure your stylesheet link in `wfs.html` is pointed
-correctly, and check out your new font specimen.
+    # edit the project configuration file and add:
+    require 'webfontspecimen'
+    
+    compass install webfontspecimen
+
+Using Web Font Specimen:
+========================
+
+1. Add your typeface(s) to your specified "fonts" folder.
+   - This is specified as "fonts_dir" in your "config.rb" file.
+
+2. Rename the "_specimen" sass file:
+   - For single specimens simply remove the "_" prefix
+   - For multiple specimens duplicate and rename for each font
+
+3. Include each face of your font in the proided "font-face" mixins
+   Or comment out any faces that you aren't using.
+
+4. Make adjustments to "specimen.html"
+   - For multiple specimens duplicate and rename for each font
+     being sure to change the stylesheet link as needed.
+   - Search for and replace "{FONT NAME}" with your font name
+
+5. Enjoy!
