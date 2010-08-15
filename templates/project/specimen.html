@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <meta charset="utf-8" />
 
   <!-- 
   
@@ -9,13 +10,13 @@
   
   1. Add your typeface(s) to your specified "fonts" folder.
      - This is specified as "fonts_dir" in your "config.rb" file.
+     - Or link to fonts from google, typkit, or other services
 
   2. Rename the "_specimen" sass file:
      - For single specimens simply remove the "_" prefix
      - For multiple specimens duplicate and rename for each font
 
-  3. Include each face of your font in the proided "font-face" mixins
-     Or comment out any faces that you aren't using.
+  3. Include your font in the provided specimen.scss "font-face" mixin
 
   4. Make adjustments to this file
      - For multiple specimens duplicate and rename for each font
@@ -27,9 +28,12 @@
   ==============================================================================
   
   -->
+  
+  <!-- http://www.phpied.com/conditional-comments-block-downloads/ -->
+  <!--[if IE]><![endif]-->
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"><![endif]-->
 
   <title>{FONT NAME} - Web Font Specimen</title>
   <link rel="stylesheet" href="css/specimen.css" type="text/css" media="screen" charset="utf-8">
@@ -47,215 +51,124 @@
 </div>
 
 
-<!-- HEADINGS, LISTS, EMPHASIS -->
+<!-- TEXT SAMPLE -->
 <div class="grid_8">
-	<h2>Headings, lists, and emphasis</h2>
-	<p>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	<h3>Lorem ipsum <em>dolor</em> sit <strong>amet</strong></h3>
-	<p>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	<ul>
-	  	<li>Duis aute irure dolor in reprehenderit</li>
-	  	<li>in <em>voluptate velit esse cillum</em> dolore eu fugiat nulla pariatur</li>
-	  	<li>Excepteur sint occaecat cupidatat non proident</li>
-	  	<li>sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-	</ul>
-	<ol>
-	  	<li>Duis aute irure dolor in reprehenderit</li>
-	  	<li>in <em>voluptate velit esse cillum</em> dolore eu fugiat nulla pariatur</li>
-	  	<li>Excepteur sint occaecat cupidatat non proident</li>
-	  	<li>sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-	</ol>
-	<h4>Consectetur <em>adipisicing</em> elit <strong>voluptate</strong></h4>
-	<p>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	<p class="dropcap">The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to discard knowledge of what has gone before or what is now going on in his own trade and profession. If the printers of today do not wish to be esteemed arrogant when they term this calling of theirs an art, they must be willing, and show that they are willing, to subject it to such laws as have made its</p>
-	<p><em>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</em></p>
-	<h5>Sed do <em>eiusmod</em> tempor <strong>incididunt</strong></h5>
-	<p>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
+	<h2>Text sample <span>&#8211; CSS font-size (px) with 1.4em line-height</span></h2>
+	<p class="s s18"><span>18</span> Is not the best kind of originality that which comes after a sound apprenticeship? That which shall prove to be the blending of a firm conception of, &#8220;useful precedent&#8221;&hellip;</p>
+	<p class="s s16"><span>16</span> Is not the best kind of originality that which comes after a sound apprenticeship? That which shall prove to be the blending of a firm conception of, &#8220;useful precedent&#8221; and the progressive&hellip;</p>
+	<p class="s s14"><span>14</span> Is not the best kind of originality that which comes after a sound apprenticeship? That which shall prove to be the blending of a firm conception of, &#8220;useful precedent&#8221; and the progressive tendencies of&hellip;</p>
+	<p class="s s13"><span>13</span> Is not the best kind of originality that which comes after a sound apprenticeship? That which shall prove to be the blending of a firm conception of, &#8220;useful precedent&#8221; and the progressive tendencies of an able mind. For, let&hellip;</p>
+	<p class="s s12"><span>12</span> Is not the best kind of originality that which comes after a sound apprenticeship? That which shall prove to be the blending of a firm conception of, &#8220;useful precedent&#8221; and the progressive tendencies of an able mind. For, let a man be as able &amp; original&hellip;</p>
+	<p class="s s11"><span>11</span> Is not the best kind of originality that which comes after a sound apprenticeship? That which shall prove to be the blending of a firm conception of, &#8220;useful precedent&#8221; and the progressive tendencies of an able mind. For, let a man be as able &amp; original as he may&hellip;</p>
+	<p class="s s10"><span>10</span> Is not the best kind of originality that which comes after a sound apprenticeship? That which shall prove to be the blending of a firm conception of, &#8220;useful precedent&#8221; and the progressive tendencies of an able mind. For, let a man be as able &amp; original as he may, he can&#8217;t afford to discard knowledge of what&hellip;</p>
+	<p class="s s9"><span>9</span> Is not the best kind of originality that which comes after a sound apprenticeship? That which shall prove to be the blending of a firm conception of, &#8220;useful precedent&#8221; and the progressive tendencies of an able mind. For, let a man be as able &amp; original as he may, he can&#8217;t afford to discard knowledge of what has gone before or what is now going&hellip;</p>
 </div>
+
+
+<!-- CHARACTER SET -->
+<div class="grid_8 charset">
+	<h2>Characters</h2>
+	<p class="s s56">A&#8201;B&#8201;C&#8201;D&#8201;E&#8201;F&#8201;G&#8201;H&#8201;I&#8201;J&#8201;K&#8201;L&#8201;M&#8201;N&#8201;O&#8201;P&#8201;Q&#8201;R&#8201;S&#8201;T&#8201;U&#8201;V&#8201;W&#8201;X&#8201;Y&#8201;Z<br />
+	a&#8201;b&#8201;c&#8201;d&#8201;e&#8201;f&#8201;g&#8201;h&#8201;i&#8201;j&#8201;k&#8201;l&#8201;m&#8201;n&#8201;o&#8201;p&#8201;q&#8201;r&#8201;s&#8201;t&#8201;u&#8201;v&#8201;w&#8201;x&#8201;y&#8201;z<br />
+	1&#8201;2&#8201;3&#8201;4&#8201;5&#8201;6&#8201;7&#8201;8&#8201;9&#8201;0&#8201;&amp;&#8201;@&#8201;.&#8201;,&#8201;?&#8201;!&#8201;&#8217;&#8201;&#8220;&#8201;&#8221;&#8201;(&#8201;)</p>
+</div>
+</div><!-- end .container_16 -->
 
 
 <!-- BODY SIZE COMPARISON -->
-<div class="grid_8">
-	<h2>Body size comparison <span>&middot; {FONT NAME} and Verdana</span></h2>
-	<p class="char-compare">
-		<span class="typeface1">a</span><span class="typeface2">a</span>
-		<span class="typeface1">b</span><span class="typeface2">b</span>
-		<span class="typeface1">c</span><span class="typeface2">c</span><br />
-		<span class="typeface1">e</span><span class="typeface2">e</span>
-		<span class="typeface1">f</span><span class="typeface2">f</span>
-		<span class="typeface1">g</span><span class="typeface2">g</span><br />
-		<span class="typeface1">n</span><span class="typeface2">n</span>
-		<span class="typeface1">o</span><span class="typeface2">o</span>
-		<span class="typeface1">t</span><span class="typeface2">t</span><br />
-		<span class="typeface1">A</span><span class="typeface2">A</span>
-		<span class="typeface1">O</span><span class="typeface2">O</span>
-		<span class="typeface1">R</span><span class="typeface2">R</span>
-	</p>
+<div class="container_16 clearfix">
+<div class="grid_16">
+	<h2>Body size comparison</h2>
+
+	<div class="bodysize">
+		<table>
+		<tr>
+			<th>{FONT NAME}</th>
+			<th>Arial <a href="http://www.codestyle.org/servlets/FontStack?stack=Arial,Helvetica&generic=sans-serif">stack</a></th>
+			<th>Times <a href="http://www.codestyle.org/servlets/FontStack?stack=Times+New+Roman,Times&generic=serif">stack</a></th>
+			<th>Georgia <a href="http://www.codestyle.org/servlets/FontStack?stack=Georgia,New+Century+Schoolbook,Nimbus+Roman+No9+L&generic=serif">stack</a></th>
+		</tr>
+		<tr>
+			<td><span>Body</span></td>
+			<td class="tf typeface2"><span>Body</span></td>
+			<td class="tf typeface3"><span>Body</span></td>
+			<td class="tf typeface4"><span>Body</span></td>
+		</tr>
+		</table>	
+	</div><!-- end .bodysize -->
+
 </div>
-
-
-<!-- LEADING -->
-<div class="grid_8">
-	<h2>Leading <span>&#8211; CSS font-size/line-height (px)</span></h2>
-	<p class="l-less"><span>13/16</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	<p class="l-mid"><span>13/18</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	<p class="l-more"><span>13/21</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	<p class="l-most"><span>13/24</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-</div><div class="clearfix"></div>
 </div><!-- end .container-16 -->
 
 
-<!-- ALPHABET -->
-<div class="dim">
+<!-- GRAYSCALE -->
+
 <div class="container_16 clearfix">
-<div class="grid_16 center">
-	<h2>&middot; 42px &middot;</h2>
-	<p class="s42">The best kind of originality is that which comes after a sound apprenticeship, that which shall</p>
-	<p class="s42"><em>The best kind of originality is that which comes after a sound apprenticeship, that which shall</em></p>
-	<p class="s42 upp ls">abcdefghijklmnopqrstuvwxyz</p>
-	<p class="s42">abcdefghijklmnopqrstuvwxyz</p>
-	<p class="s42 ls">$ &amp; &sect; 1234567890-.,:;&#8212;&#8220;&#8221;?!</p>
-</div>
-</div><!-- end .container_16 -->
-</div><!-- end .dim -->
-
-
-<!-- MEASURE -->
-<div class="container_16 clearfix">
-<div class="grid_16">
-	<h2>Measure <span>&#8211; CSS font-size/line-height &times; width (px)</span></h2>
-	<p class="m-widest"><span>13/18 &times; 900</span> The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to discard knowledge of what has gone before or what is now going on in his own trade and profession. If the printers of today do not wish to be esteemed arrogant when they term this calling of theirs an art, they must be willing, and show that they are willing, to subject it to such laws as have made its</p>
-	<p class="m-wide"><span>13/18 &times; 700</span> The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to discard knowledge of what has gone before or what is now going on in his own trade and profession. If the printers of today do not wish to be esteemed arrogant when they term this calling of theirs an art, they must be willing, and show that they are willing, to subject it to such laws as have made its</p>
-</div>
-<div class="grid_9">
-	<p class="m-mid"><span>13/18 &times; 450</span> The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	<p class="m-narrow"><span>13/18 &times; 300</span> The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-</div>
-<div class="grid_7 small">
-	<p class="m-mid"><span>11/14 &times; 350</span> The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	<p class="m-narrow"><span>11/14 &times; 250</span> The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	<p class="m-mini"><span>9/13 &times; 200</span> The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
+<div class="grid_16 clearfix">
+	<h2>Grayscale <span>&#8211; CSS hex color</span></h2>
 </div>
 
-
-<!-- SIZE -->
-<div class="grid_16">
-	<h2>Size <span>&#8211; CSS font-size (px)</span></h2>
-	<p class="s s36"><span>36</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s30"><span>30</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s24"><span>24</span> Pack my box with five dozen liquor jugs.</p>
-</div><div class="clearfix"></div>
-<div class="grid_10">
-	<p class="s s21"><span>21</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s18"><span>18</span> Pack my box with five dozen liquor jugs.</p>
-</div>
-<div class="grid_6 upp">
-	<p class="s s9"><span>9</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s10"><span>10</span> Pack my box with five dozen liquor jugs.</p>
-</div><div class="clearfix"></div>
-<div class="grid_8">
-	<p class="s s16"><span>16</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s14"><span>14</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s13"><span>13</span> Pack my box with five dozen liquor jugs.</p>
-</div>
-<div class="grid_8 upp">
-	<p class="s s11"><span>11</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s12"><span>12</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s13"><span>13</span> Pack my box with five dozen liquor jugs.</p>
-</div><div class="clearfix"></div>
-<div class="grid_6">
-	<p class="s s12"><span>12</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s11"><span>11</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s10"><span>10</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s9"><span>9</span> Pack my box with five dozen liquor jugs.</p>
-</div>
-<div class="grid_10 upp">
-	<p class="s s14"><span>14</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s16"><span>16</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s18"><span>18</span> Pack my box with five dozen liquor jugs.</p>
-</div><div class="clearfix"></div>
-<div class="grid_16 upp">
-	<p class="s s21"><span>21</span> Pack my box with five dozen liquor jugs.</p>
-	<p class="s s24"><span>24</span> Pack my box with five dozen liquor jugs.</p>
-</div>
-
-
-<!-- GRAYSCALE AND COLOR ON WHITE -->
-<div class="grid_8">
-	<h2>Grayscale <span>&#8211; CSS color (shorthand hexadecimal)</span></h2>
+<div class="grayscale clearfix">
+<div class="grid_8 white">
 	<p class="c000"><span>#000</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 	<p class="c333"><span>#333</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 	<p class="c666"><span>#666</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 	<p class="c999"><span>#999</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 	<p class="cCCC"><span>#CCC</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 </div>
-<div class="grid_8">
-	<div class="c000-fff">
-		<h2>Color <span>&#8211; CSS color (shorthand hexadecimal)</span></h2>
-		<p><span>#000</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
-	<div class="cf00-fff">
-		<p><span>#F00</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
-	<div class="c0ff-fff">
-		<p><span>#0FF</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
-</div>
-</div><!-- end .container_16 -->
 
-
-<!-- GRAYSCALE AND COLOR ON BLACK -->
-<div class="dark">
-<div class="container_16 clearfix">
-<div class="grid_8">
-	<h2>Grayscale <span>&#8211; CSS color (shorthand hexadecimal)</span></h2>
-	<p class="cfff"><span>#FFF</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
+<div class="grid_8 black">
+	<p class="cFFF"><span>#FFF</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 	<p class="cCCC"><span>#CCC</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 	<p class="c999"><span>#999</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 	<p class="c666"><span>#666</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 	<p class="c333"><span>#333</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
 </div>
-<div class="grid_8">
-	<div class="cfff-000">
-		<h2>Color <span>&#8211; CSS color (shorthand hexadecimal)</span></h2>
-		<p><span>#FFF</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
-	<div class="c0ff-000">
-		<p><span>#0FF</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
-	<div class="cf00-000">
-		<p><span>#F00</span>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
-</div>
-</div><!-- end .container_16 -->
-</div><!-- end .dark -->
+</div><!-- end .grayscale -->
+</div><!-- end .container-16 -->
 
 
-<!-- BLACK AND WHITE ON COLOR -->
-<div class="container_16 clearfix">
-<div class="grid_8">
-	<div class="c cfff-f00">
-		<h2>#FFF on #F00</h2>
-		<p>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
+<!-- SIZE U&LC -->
+<div class="container_16 ulc clearfix">
+<div class="grid_16">
+	<h2>Size <span>&#8211; CSS font-size (px)</span></h2>
+	<p class="s s36"><span>36</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
+	<p class="s s30"><span>30</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
+	<p class="s s24"><span>24</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
+</div><div class="clearfix"></div>
+<div class="grid_10">
+	<p class="s s21"><span>21</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
+	<p class="s s18"><span>18</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
 </div>
+<div class="grid_6 upp">
+	<p class="s s9"><span>9</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+	<p class="s s10"><span>10</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+</div><div class="clearfix"></div>
 <div class="grid_8">
-	<div class="c c000-f00">
-		<h2>#000 on #0FF</h2>
-		<p>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
+	<p class="s s16"><span>16</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
+	<p class="s s14"><span>14</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
+	<p class="s s13"><span>13</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
 </div>
-<div class="grid_8">
-	<div class="c cfff-0ff">
-		<h2>#FFF on #0FF</h2>
-		<p>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
+<div class="grid_8 upp">
+	<p class="s s11"><span>11</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+	<p class="s s12"><span>12</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+	<p class="s s13"><span>13</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+</div><div class="clearfix"></div>
+<div class="grid_6">
+	<p class="s s12"><span>12</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
+	<p class="s s11"><span>11</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
+	<p class="s s10"><span>10</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
+	<p class="s s9"><span>9</span> <span class="text">Pack my box with five dozen liquor jugs.</span></p>
 </div>
-<div class="grid_8">
-	<div class="c c000-0ff">
-		<h2>#000 on #0FF</h2>
-		<p>The best kind of originality is that which comes after a sound apprenticeship, that which shall prove to be the blending of a firm conception of useful precedent and the progressive tendencies of an able mind. For, let a man be as able and original as he may, he cannot afford to</p>
-	</div>
+<div class="grid_10 upp">
+	<p class="s s14"><span>14</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+	<p class="s s16"><span>16</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+	<p class="s s18"><span>18</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+</div><div class="clearfix"></div>
+<div class="grid_16 upp">
+	<p class="s s21"><span>21</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+	<p class="s s24"><span>24</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
+	<p class="s s30"><span>30</span> <span class="text">Pack my box with five dozen liquor jugs</span></p>
 </div>
 </div><!-- end .container_16 -->
 
@@ -264,6 +177,7 @@
 <div id="footer" class="container_12">
 <div class="grid_6 suffix_6">
 	<p>This web font specimen is brought to you by <a href="http://nicewebtype.com/">Nice Web Type</a>.<br />
+	Ported for <a href="http://www.sass-lang.com">Sass</a>/<a href="http://www.compass-style.org/">Compass</a> by <a href="http://www.oddbird.net/">Eric Meyer</a>.<br />
 	<a href="http://webfontspecimen.com/">Grab a copy and test your type</a>. Licensed via <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons</a>.</p>
 </div>
 </div><!-- end #footer -->

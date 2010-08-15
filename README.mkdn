@@ -30,13 +30,13 @@ Using Web Font Specimen:
 
 1. Add your typeface(s) to your specified "fonts" folder.
    - This is specified as "fonts_dir" in your "config.rb" file.
+   - Or link to fonts from google, typkit, or other services
 
 2. Rename the "_specimen" sass file:
    - For single specimens simply remove the "_" prefix
    - For multiple specimens duplicate and rename for each font
 
-3. Include each face of your font in the proided "font-face" mixins
-   Or comment out any faces that you aren't using.
+3. Include your font in the provided specimen.scss "font-face" mixin
 
 4. Make adjustments to "specimen.html"
    - For multiple specimens duplicate and rename for each font

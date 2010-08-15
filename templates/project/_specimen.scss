@@ -12,13 +12,13 @@
 // 
 // 1. Add your typeface(s) to your specified "fonts" folder.
 //    - This is specified as "fonts_dir" in your "config.rb" file.
+//    - Or link to fonts from google, typkit, or other services
 // 
 // 2. Rename this file:
 //    - For single specimens simply remove the "_" prefix
 //    - For multiple specimens duplicate and rename for each font
 // 
-// 3. Include each face of your font below
-//    Or comment out any faces that you aren't using.
+// 3. Include your font below
 // 
 // 4. Make adjustments to "specimen.html"
 //    - For multiple specimens duplicate and rename for each font
@@ -33,49 +33,18 @@
 $font-type: serif;
 
 /* Standard ----------------------------------*/
-$normal-font-face: "Name Your Font";
+$font-face: "Name Your Font";
 @include font-face(
-  $normal-font-face, 
+  $font-face, 
   font-files(
     "type_file.woff", woff, 
     "type_file.ttf", truetype,
     "type_file.svg#Type-Name", svg
   ), 
-  "type_file.eot", 
-  postscriptname
+  "type_file.eot"
 );
 
-$normal-font-stack: $normal-font-face, $font-type;
-
-/* Italic ----------------------------------*/
-$italic-font-face: "Name Your Italic Font";
-@include font-face(
-  $italic-font-face, 
-  font-files(
-    "type_file.woff", woff, 
-    "type_file.ttf", truetype,
-    "type_file.svg#Type-Name", svg
-  ), 
-  "type_file.eot", 
-  postscriptname
-);
-
-$italic-font-stack: $italic-font-face, $font-type;
-
-/* Bold ----------------------------------*/
-$bold-font-face: "Name Your Bold Font";
-@include font-face(
-  "Your bold typeface", 
-  font-files(
-    "type_file.woff", woff, 
-    "type_file.ttf", truetype,
-    "type_file.svg#Type-Name", svg
-  ), 
-  "type_file.eot", 
-  postscriptname
-);
-
-$bold-font-stack: $bold-font-face, $font-type;
+$font-stack: $font-face, $font-type;
 
 // Import WebFontSpecimen -------------------------------------------*/
 // Leave this below your font settings

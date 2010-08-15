@@ -1,4 +1,6 @@
 stylesheet '_specimen.scss', :media => "screen, projection"
+image 'black.gif'
+image 'grid.gif'
 html 'specimen.html'
 
 description "A Compass port of Nice Web Type's Web Font Specimen tool - http://webfontspecimen.com/"
