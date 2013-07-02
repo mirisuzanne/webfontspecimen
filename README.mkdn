@@ -1,10 +1,7 @@
 Web Font Specimen - Compass Plugin 
 ==================================
 
-[Web Font Specimen](http://webfontspecimen.com/) is a tool built by Tim Brown
-([Nice Web Type](http://nicewebtype.com/)) to help web designers make
-type-setting decisions. It was ported to Compass by [Eric
-Meyer](http://www.oddbird.net).
+[Web Font Specimen](http://webfontspecimen.com/) is a tool built by Tim Brown([Nice Web Type](http://nicewebtype.com/)) to help web designers maketype-setting decisions. It was ported to Compass by [Eric Meyer](http://www.oddbird.net).
 
 
 Install 
@@ -41,6 +38,6 @@ Using Web Font Specimen:
 4. Make adjustments to "specimen.html"
    - For multiple specimens duplicate and rename for each font
      being sure to change the stylesheet link as needed.
-   - Search for and replace "{FONT NAME}" with your font name
+   ~~- Search for and replace "{FONT NAME}" with your font name~~
 
 5. Enjoy!
