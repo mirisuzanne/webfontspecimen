@@ -234,3 +234,24 @@ a:active {
 p.upp {
 	text-align: left;
 	}
+
+// Add Font Name to page using CSS Pseudo Classes rather than replacing {FONT NAME}. Hide {FONT NAME} on H1 and Table Head (note: you can't target <title> with pseudo classes).
+ 
+h1 {
+  span {
+    display: none;
+  }
+  &:before {
+    content: $font-face;
+  }
+}
+table {
+  th:first-child {
+    span {
+      display: none;
+    }
+    &:before {
+      content: $font-face;
+    }
+  }
+}           
