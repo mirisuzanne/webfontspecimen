@@ -1,10 +1,7 @@
 Web Font Specimen - Compass Plugin 
 ==================================
 
-[Web Font Specimen](http://webfontspecimen.com/) is a tool built by Tim Brown
-([Nice Web Type](http://nicewebtype.com/)) to help web designers make
-type-setting decisions. It was ported to Compass by [Eric
-Meyer](http://www.oddbird.net).
+[Web Font Specimen](http://webfontspecimen.com/) is a tool built by Tim Brown([Nice Web Type](http://nicewebtype.com/)) to help web designers maketype-setting decisions. It was ported to Compass by [Eric Meyer](http://www.oddbird.net).
 
 
 Install 
@@ -29,18 +26,19 @@ Using Web Font Specimen:
 ========================
 
 1. Add your typeface(s) to your specified "fonts" folder.
-   - This is specified as "fonts_dir" in your "config.rb" file.
-   - Or link to fonts from google, typkit, or other services
+   - This is already specified as "fonts_dir" in your "config.rb" file.
+   - Or link to fonts from google, typekit, or other services
 
-2. Rename the "_specimen" sass file:
-   - For single specimens simply remove the "_" prefix
-   - For multiple specimens duplicate and rename for each font
+2. For multiple specimens
+   - Duplicate `_type_specimen_1.scss`
+   - add @import "_type_specimen_NEW_NUMBER.scss"; for each file to   
+     specimen.scss 
 
-3. Include your font in the provided specimen.scss "font-face" mixin
+3. Include your font in the provided _type_specimen_1.scss "font-face" 
+   mixin
 
 4. Make adjustments to "specimen.html"
    - For multiple specimens duplicate and rename for each font
      being sure to change the stylesheet link as needed.
-   - Search for and replace "{FONT NAME}" with your font name
 
 5. Enjoy!
