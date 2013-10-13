@@ -34,14 +34,20 @@ $font-type: serif;
 
 /* Standard ----------------------------------*/
 $font-face: "Name Your Font";
+$font-file-name: "type_file";
+$font-weight: normal !default;
+$font-style: normal !default;
+
 @include font-face(
   $font-face, 
   font-files(
-    "type_file.woff", woff, 
-    "type_file.ttf", truetype,
-    "type_file.svg#Type-Name", svg
+    "#{$font-file-name}.woff", woff, 
+    "#{$font-file-name}.ttf", truetype,
+    "#{$font-file-name}.svg##{$font-face}", svg
   ), 
-  "type_file.eot"
+  "#{$font-file-name}.eot",
+  $font-weight, 
+  $font-style
 );
 
 $font-stack: $font-face, $font-type;

@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.3.0"
-  s.date = "2010-08-15"
+  s.version = "0.3.1"
+  s.date = "2013-07-02"
 
   # Gem Details
   s.name = "webfontspecimen"

@@ -7,22 +7,22 @@
   
   Using Web Font Specimen =======================================================
   
-  
   1. Add your typeface(s) to your specified "fonts" folder.
-     - This is specified as "fonts_dir" in your "config.rb" file.
-     - Or link to fonts from google, typkit, or other services
+     - This is already specified as "fonts_dir" in your "config.rb" file.
+     - Or link to fonts from google, typekit, or other services
 
-  2. Rename the "_specimen" sass file:
-     - For single specimens simply remove the "_" prefix
-     - For multiple specimens duplicate and rename for each font
+  2. For multiple specimens
+     - Duplicate `_type_specimen_1.scss`
+     - add @import "_type_specimen_NEW_NUMBER.scss"; for each file to   
+       specimen.scss 
 
-  3. Include your font in the provided specimen.scss "font-face" mixin
+  3. Include your font in the provided _type_specimen_1.scss "font-face" 
+     mixin
 
-  4. Make adjustments to this file
+  4. Make adjustments to "specimen.html"
      - For multiple specimens duplicate and rename for each font
        being sure to change the stylesheet link as needed.
-     - Search for and replace "{FONT NAME}" with your font name
-     
+
   5. Enjoy!
      
   ==============================================================================
@@ -47,7 +47,7 @@
 
 <!-- NAME OF TYPEFACE -->
 <div class="grid_16">
-	<h1>{FONT NAME}</h1>
+	<h1><span>{FONT NAME}</span></h1> 
 </div>
 
 
@@ -83,7 +83,7 @@
 	<div class="bodysize">
 		<table>
 		<tr>
-			<th>{FONT NAME}</th>
+			<th><span>{FONT NAME}</span></th>
 			<th>Arial <a href="http://www.codestyle.org/servlets/FontStack?stack=Arial,Helvetica&generic=sans-serif">stack</a></th>
 			<th>Times <a href="http://www.codestyle.org/servlets/FontStack?stack=Times+New+Roman,Times&generic=serif">stack</a></th>
 			<th>Georgia <a href="http://www.codestyle.org/servlets/FontStack?stack=Georgia,New+Century+Schoolbook,Nimbus+Roman+No9+L&generic=serif">stack</a></th>
