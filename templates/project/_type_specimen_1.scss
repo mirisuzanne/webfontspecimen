@@ -11,19 +11,18 @@
 // ========================
 // 
 //  1. Add your typeface(s) to your specified "fonts" folder.
-//     - This is specified as "fonts_dir" in your "config.rb" file.
+//     - This is already specified as "fonts_dir" in your "config.rb" file.
 //     - Or link to fonts from google, typekit, or other services
 //
 //  2. For multiple specimens
-//     - Duplicate this file
-//     - add @import "_type_specimen_NEW_NUMBER.scss"; for each file to   
-//       specimen.scss 
+//     - Duplicate `_type_specimen_1.scss`
+//     - add @import "_type_specimen_NEW_NUMBER.scss;" to specimen.scss 
 //
-//  3. Add your font name and file path to "$font-name" and "$font-file-name"
+//  3. Add your font name and file path to "$font-name" and "$font-file-name" to "_type_specimen_1.scss"
+//    - Optional: add your `$pretty-font-name` (displays on the `specimen.html` page)
 //
 //  4. Make adjustments to "specimen.html"
-//     - For multiple specimens duplicate and rename for each font
-//       being sure to change the stylesheet link as needed.
+//     - For multiple specimens duplicate and rename for each font being sure to change the stylesheet link as needed.
 //
 //  5. Enjoy!
 //
@@ -34,11 +33,15 @@ $font-type: serif;
 
 /* Standard ----------------------------------*/
 // Font Name i.e. "DroidSerifRegular"
-$font-name: "Name Your Font";
+$font-name: "YourFontsCSSName";
 // File path minus extension i.e "DroidSerif/DroidSerif-Regular-webfont"
 $font-file-name: "type_file";
 $font-weight: normal !default;
 $font-style: normal !default;
+
+// Pretty Font name for displaying on the specimen.html page i.e. "Droid Serif Regular" 
+// If it's left commented out it will default to $font-name
+// $pretty-font-name: "Your Font's Name";
 
 @include font-face(
   $font-name, 
