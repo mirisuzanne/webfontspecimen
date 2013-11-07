@@ -1,44 +1,36 @@
-Web Font Specimen - Compass Plugin 
-==================================
+# Web Font Specimen - Compass Plugin 
 
-[Web Font Specimen](http://webfontspecimen.com/) is a tool built by Tim Brown([Nice Web Type](http://nicewebtype.com/)) to help web designers maketype-setting decisions. It was ported to Compass by [Eric Meyer](http://www.oddbird.net).
+[Web Font Specimen](http://webfontspecimen.com/) is a tool built by Tim Brown([Nice Web Type](http://nicewebtype.com/)) to help web designers make type-setting decisions. It was ported to Compass by [Eric Meyer](http://www.oddbird.net).
 
 
-Install 
-=======
+## Install 
 
     sudo gem install webfontspecimen
 
-Create A Project Using WFS:
-===========================
+### Create A Project Using WFS:
 
     compass create <project name> -r webfontspecimen -u webfontspecimen
 
-Or Add WFS To An Existing Project:
-==================================
+### Or Add WFS To An Existing Project:
 
-    # edit the project configuration file and add:
-    require 'webfontspecimen'
-    
-    compass install webfontspecimen
+Edit the project configuration file and add:  
 
-Using Web Font Specimen:
-========================
+    require 'webfontspecimen'    
 
-1. Add your typeface(s) to your specified "fonts" folder.
-   - This is already specified as "fonts_dir" in your "config.rb" file.
+## Using Web Font Specimen:
+
+1. Add your typeface(s) to your specified `fonts` folder.
+   - This is already specified as `fonts_dir` in your `config.rb` file.
    - Or link to fonts from google, typekit, or other services
 
 2. For multiple specimens
    - Duplicate `_type_specimen_1.scss`
-   - add @import "_type_specimen_NEW_NUMBER.scss"; for each file to   
-     specimen.scss 
+   - Add `@import "_type_specimen_NEW_NUMBER.scss";` to `specimen.scss` 
 
-3. Include your font in the provided _type_specimen_1.scss "font-face" 
-   mixin
+3.  Add your font name and file path to `$font-name` and `$font-file-name` to `_type_specimen_1.scss`  
+    - _Optional:_ add your `$pretty-font-name` (displays on the `specimen.html` page)
 
-4. Make adjustments to "specimen.html"
-   - For multiple specimens duplicate and rename for each font
-     being sure to change the stylesheet link as needed.
+4. Make adjustments to `specimen.html`
+   - For multiple specimens duplicate and rename for each font being sure to change the stylesheet link as needed.
 
 5. Enjoy!
