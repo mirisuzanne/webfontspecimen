@@ -123,7 +123,7 @@ a:active {
 -----------------------------------------*/
 .bodysize {
 	overflow: hidden;
-	background: #fff image-url("grid.gif") -5px 9px repeat;
+	background: #fff inline-image("grid.gif") -5px 9px repeat;
 	}
 .bodysize table {
 	width: 100%;
@@ -178,7 +178,7 @@ a:active {
 -----------------------------------------*/
 .grayscale {
 	clear: both;
-	background: #fff image-url("black.gif") top right repeat-y;
+	background: #fff inline-image("black.gif") top right repeat-y;
 	}
 .grayscale p span {
 	display: block;
