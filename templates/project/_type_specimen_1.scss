@@ -10,22 +10,22 @@
 // Web Font Specimen Usage:
 // ========================
 // 
-// 1. Add your typeface(s) to your specified "fonts" folder.
-//    - This is specified as "fonts_dir" in your "config.rb" file.
-//    - Or link to fonts from google, typkit, or other services
-// 
-// 2. Rename this file:
-//    - For single specimens simply remove the "_" prefix
-//    - For multiple specimens duplicate and rename for each font
-// 
-// 3. Include your font below
-// 
-// 4. Make adjustments to "specimen.html"
-//    - For multiple specimens duplicate and rename for each font
-//      being sure to change the stylesheet link as needed.
-//    - Search for and replace "{FONT NAME}" with your font name
+//  1. Add your typeface(s) to your specified "fonts" folder.
+//     - This is specified as "fonts_dir" in your "config.rb" file.
+//     - Or link to fonts from google, typekit, or other services
 //
-// 5. Enjoy!
+//  2. For multiple specimens
+//     - Duplicate this file
+//     - add @import "_type_specimen_NEW_NUMBER.scss"; for each file to   
+//       specimen.scss 
+//
+//  3. Add your font name and file path to "$font-name" and "$font-file-name"
+//
+//  4. Make adjustments to "specimen.html"
+//     - For multiple specimens duplicate and rename for each font
+//       being sure to change the stylesheet link as needed.
+//
+//  5. Enjoy!
 //
 
 
@@ -33,24 +33,26 @@
 $font-type: serif;
 
 /* Standard ----------------------------------*/
-$font-face: "Name Your Font";
+// Font Name i.e. "DroidSerifRegular"
+$font-name: "Name Your Font";
+// File path minus extension i.e "DroidSerif/DroidSerif-Regular-webfont"
 $font-file-name: "type_file";
 $font-weight: normal !default;
 $font-style: normal !default;
 
 @include font-face(
-  $font-face, 
+  $font-name, 
   font-files(
     "#{$font-file-name}.woff", woff, 
     "#{$font-file-name}.ttf", truetype,
-    "#{$font-file-name}.svg##{$font-face}", svg
+    "#{$font-file-name}.svg##{$font-name}", svg
   ), 
   "#{$font-file-name}.eot",
   $font-weight, 
   $font-style
 );
 
-$font-stack: $font-face, $font-type;
+$font-stack: $font-name, $font-type;
 
 // Import WebFontSpecimen -------------------------------------------*/
 // Leave this below your font settings

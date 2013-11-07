@@ -1,7 +1,7 @@
 /* Fonts ----------------------------------------------- */
 $font-type: serif !default;
-$font-face: Georgia !default;
-$font-stack: $font-face, $font-type !default;
+$font-name: Georgia !default;
+$font-stack: $font-name, $font-type !default;
 
 @mixin font-stack {
   font-family: $font-stack; 
@@ -242,7 +242,7 @@ h1 {
     display: none;
   }
   &:before {
-    content: $font-face;
+    content: $font-name;
   }
 }
 table {
@@ -251,7 +251,7 @@ table {
       display: none;
     }
     &:before {
-      content: $font-face;
+      content: $font-name;
     }
   }
 }           
